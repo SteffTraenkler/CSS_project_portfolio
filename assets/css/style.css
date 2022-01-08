@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fjalla+One&family=Work+Sans&display=swap');
-
-/* Font: Work Sans, Didact Gothic, Fjalla One
-Farben: #9e9e9e, #fff, #000, #333, #666 */
-
+/* Farben: #9e9e9e, #fff, #000, #333, #666 */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+section{
+    position: relative;
+}
 p{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     opacity: 0.5;
+    font-size: 1.2rem;
 }
 a{
     text-decoration: none;
@@ -20,9 +21,6 @@ a{
 header{
     text-align: center;
     margin: 1.3rem;
-}
-p{
-    font-size: 1.2rem;
 }
 /* header end */
 
@@ -33,7 +31,6 @@ section:nth-of-type(1){
     text-align: center;
     height: 260vh;
     background: url(../img/portfolio1.jpeg) no-repeat center/50%;
-    position: relative;
 }
 section:nth-of-type(1) div:nth-of-type(1){
     width: 49vw;
@@ -69,8 +66,7 @@ section:nth-of-type(1n+2) article h1{
     font-weight: 400;
 }
 section:nth-of-type(2n+2){
-    height: 100vh;
-    position: relative;
+    height: 100vh; 
 }
 section:nth-of-type(2n+3){
     height: 130vh;
@@ -80,11 +76,11 @@ section:nth-of-type(even) article {
     height: 100vh;
     padding:7% 5% 1% 15%;
 }
-section:nth-of-type(even) article h1{
+section:nth-of-type(even) article h1, section:nth-of-type(6) h1{
     color: #fff;
     line-height: 12rem;
 }
-section:nth-of-type(even) article p{
+section:nth-of-type(even) article p, section:nth-of-type(6) p, section:nth-of-type(6) p a{
     color: #fff;
 }
 section:nth-of-type(even) article p:nth-of-type(1){
@@ -144,7 +140,7 @@ section:nth-of-type(4){
         /* sections 3+5 */
 section:nth-of-type(odd) article {
     height: 100vh;
-    padding:7% 5% 1% 15%;
+    padding:14% 6% 2% 17.5%;
 }
 section:nth-of-type(odd) article h1{
     color: #000;
@@ -181,23 +177,57 @@ section:nth-of-type(odd) article p:nth-of-type(3):hover + div:nth-of-type(1){
     opacity: 1;
 }
 section:nth-of-type(odd) article div:nth-of-type(1){
-    color: #9e9e9e;
-    opacity: 0.3;
+    color: #333;
+    opacity: 0.6;
     font-size: 10rem;
     font-family: 'Fjalla One', sans-serif;
     text-align: right;
     margin: -7% 4%;
 }
 section:nth-of-type(odd) article div:nth-of-type(2){
-    background-color: #000;
-    border: 1px solid #000;
+    border: 1px solid black;
     opacity: 0.5;
     height: 1px;
     width: 30px;
     position: absolute;
-    top: 15%;
-    left: 15.5%;
+    top:22.3%;
+    left: 18%;
 }
 section:nth-of-type(3){
     background: url(../img/portfolio3.png) no-repeat center/cover;
+}
+section:nth-of-type(5){
+    background: url(../img/portfolio5.png) no-repeat center/cover;
+}
+    /* section 2-5 done */
+/* section 6 */
+section:nth-of-type(6){
+    background-color: #000;
+    height: 130vh;
+}
+section:nth-of-type(6) h1{
+    font-size: 11rem;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 15%;
+}
+section:nth-of-type(6) p{
+    width: 45vw;
+    position: relative;
+    top: 30%;
+    left:45%;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+}
+section:nth-of-type(6) p:nth-of-type(2){
+    padding: 7% 0 0 0;
+    font-size: 3.5rem;
+    color: #fff;
+    opacity: 1;
+}
+
+section:nth-of-type(6) p a:hover{
+    text-decoration: underline;
 }
