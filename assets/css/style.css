@@ -8,7 +8,7 @@
 section{
     position: relative;
 }
-p{
+p:not(section:nth-of-type(7)){
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     opacity: 0.5;
@@ -227,7 +227,37 @@ section:nth-of-type(6) p:nth-of-type(2){
     color: #fff;
     opacity: 1;
 }
-
 section:nth-of-type(6) p a:hover{
     text-decoration: underline;
 }
+    /* social media links */
+section:nth-of-type(7){
+    height: 200vh;
+    padding: 10%;
+}
+section:nth-of-type(7) p {
+    text-align: center;
+    line-height: 23rem;
+    font-size: 10rem;
+    opacity: 1;
+}
+section:nth-of-type(7) p a{
+    font-family: 'Didact Gothic', sans-serif;
+    color: #000;
+}
+/* footer */
+footer h3{
+    text-align: center;
+    margin: 5%;
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+@keyframes myAnim {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(2);
+    }
+    100% {
+    transform: scale(1);
+    }
